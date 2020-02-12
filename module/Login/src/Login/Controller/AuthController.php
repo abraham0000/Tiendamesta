@@ -49,6 +49,7 @@ class AuthController extends AbstractActionController{
     public function loginAction(){
         if(! $this->getAuthService()->hasIdentity()){
             //cambiar aqui por la verdadera ruta ya que no la declaramos 
+            // 
             return $this->redirect()->toRoute('success');
         }
     }
